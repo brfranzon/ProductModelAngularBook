@@ -1,0 +1,8 @@
+    <div *ngFor = "let p of products">
+     <product-info
+      [product] = "p"
+      (selectedProduct) = "productSelected($event)"
+      >
+    </product-info>
+    </div>
+
