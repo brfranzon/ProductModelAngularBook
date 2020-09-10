@@ -1,3 +1,13 @@
 .borderOnClick{
     background-color: rgb(212, 255, 255);
 }
+
+.scaleBildPlus{
+    transform: scale(1.4) ;
+    transition:  2s ease-in-out;
+}
+
+.scaleBildMinus{
+    transform: scale(1.0) ;
+    transition:  2s ease-in-out;
+}

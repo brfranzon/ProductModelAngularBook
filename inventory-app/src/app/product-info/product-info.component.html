@@ -1,16 +1,32 @@
 
 <div class="card-body border" [class.borderOnClick] = "isSelected">
 
-  <!--img class="card-img-top" src="..." alt="Card image cap"-->
-  <product-image
-  [product] = 'product'
-  ></product-image>  
-  
+  <!--img class="card-img-top" src="..." alt="Card image cap"
+   "{{ overBild ? 'scaleBildPlus' : 'scaleBildMinus'}}"
+  -->
+  <div class = "{{ overBild ? 'scaleBildPlus' : 'scaleBildMinus'}}">
+    <product-image
+    [product] = 'product'
+    (onMouseOverBild) = "onMouseOver($event)"
+    (onMouseLeaveBild) = "onMouseLeave($event)"
+    ></product-image>  
+  </div>
+
   <h5 class="card-title">{{ product.name }}</h5>
   <p class="card-text"> {{ product.sku }}</p>
+  <!--small> {{ product.department }}</small-->
+  <product-department
+    [product] = "product"
+  ></product-department>
+
 
   <div class="col sm-8 bg-warning d-flex justify-content-between">
-    <span> $ {{ product.price }} </span>
+
+    <!--span> $ {{ product.price }} </span-->
+    <product-price
+    [price] = "product.price"
+    > </product-price> 
+
     <button class="text-white bg-success"
     (click) = "productClicked()"
     > Buy </button> 

@@ -17,25 +17,32 @@ export class AppComponent {
     this.products = [
     
       new ProductModel(
-      'NICEHAT_1',// sku
+      'Apfel',// sku
       'A Nice Black Hat',// name
       '../assets/img_1.jpg',// imageUrl
-      ['Men','Accessories','Hats'],// department
+      ['Schnitzel','Saft','Hats'],// department
       29.99),
 
     new ProductModel(
-        'NICEHAT_2',// sku
+        'Motorrad',// sku
         'A Nice Black Hat',// name
         '../assets/img_2.jpg',// imageUrl
-        ['Men','Accessories','Hats'],// department
+        ['Men','Accessories','Beatles'],// department
         59.99),
 
     new ProductModel(
-          'NICEHAT_3',// sku
+          'Kinder',// sku
           'A Nice Black Hat',// name
           '../assets/img_3.jpg',// imageUrl
-          ['Men','Accessories','Hats'],// department
-          4.99)
+          ['Radiohead','Darmstadt','Sommer'],// department
+          4.99),
+
+    new ProductModel(
+          'Kinder2',// sku
+          'A Nice Black Hat2',// name
+          '../assets/img_4.jpg',// imageUrl
+          ['Radiohead2','Darmstadt2','Sommer2'],// department
+           8.89)
       
      ]
  }
